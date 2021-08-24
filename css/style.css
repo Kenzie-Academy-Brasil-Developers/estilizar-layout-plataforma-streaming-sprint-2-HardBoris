@@ -14,14 +14,23 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 /* VARIÁVEIS */
 :root{
-  
+  --main-color: #00002e;
 }
 
 /*BODY*/
 	body{
-
+		background-color: var(--main-color);
+		color: white;
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+		font-size: 16px;
 	}
 
 /*TOPO*/
@@ -29,10 +38,73 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		
 	}
 
-/*RODAPÉ*/
-	
+/* Rodapé */
+footer {
+	height: 200px;
+	display: flex;
+	align-items: center;
+}
+button {
+	width: 200px;
+	height: 50px;
+	background-color: var(--main-color);
+	color: white;
+	border: 2px solid white;
+	font-size: 1em;
+}
+
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	div.pg-home section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
 	}
+
+header.pg-home {
+	font-size: 3em;
+	text-align: center;
+}
+
+/* Usuarios */
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	/* flex-wrap: wrap; */
+	font-size: 1.2em;
+}
+
+li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+li figure img {
+	width: 186px;
+	height: 186px;
+	object-fit: contain;
+}
+
+figcaption {
+	display: none;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+	ul {
+		flex-wrap: wrap;
+	}
+
+	li {
+		flex-shrink: 8;
+	}
+
+	header.topo {
+		text-align: center;
+	}
+}
