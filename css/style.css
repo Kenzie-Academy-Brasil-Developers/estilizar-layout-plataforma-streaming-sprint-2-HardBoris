@@ -80,14 +80,14 @@ header.pg-home {
 	flex: 1;
 	display: flex;
     justify-content: center;
-	font-size: 5vw;
-	font-weight: bold;
-	text-align: center;
 	height: 25%;
 }
 
 header.pg-home h2 {
 	margin: auto;
+	font-weight: bold;
+	font-size: 5vw;
+	text-align: center;
 }
 
 ul {
@@ -99,12 +99,13 @@ ul {
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 0;
 }
 
 li {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	box-sizing: border-box;
 	width: 50%;
 	height: 50%;
@@ -118,17 +119,33 @@ li figure {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 0;
 }
 
 li figure img {
 	box-sizing: border-box;
+	flex: 1;
 	height: 80%;
-	min-width: 100px;
 	object-fit: contain;
+}
+
+.nombreUsuario {
+	box-sizing: border-box;
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+li section h3 {
+	flex: 1;
 }
 
 footer.pg-home {
 	flex: 1;
+	height: 25%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -151,7 +168,7 @@ button {
 		justify-content: flex-start;
 	}
 
-	header.pg-home {
+	header.pg-home h2 {
 		font-size: 50px;
 	}
 
@@ -165,7 +182,7 @@ button {
 	li {
 		width: 25%;
 		max-width: 186px;
-		font-size: 20px;
+		font-size: 12px;
 	}
 	button {
 		width: 200px;
