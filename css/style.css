@@ -24,7 +24,7 @@ body{
 	background-color: var(--main-color);
 	color: white;
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-	font-size: 16px;
+	
 }
 
 figcaption {
@@ -37,6 +37,7 @@ figcaption {
 	height: 12vh;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .topo figure {
@@ -54,7 +55,7 @@ figcaption {
 #footPage {
 	box-sizing: border-box;
 	height: 8vh;
-	font-size: 0.8em;
+	font-size: 2vw;
 	text-align: center;
 	line-height: 6vh;
 }
@@ -63,23 +64,26 @@ figcaption {
 div.pg-home {
 	box-sizing: border-box;
 	height: 80vh;
-	font-size: 1em;
 }
 
 div.pg-home section {
 	box-sizing: inherit;
-	max-width: 858px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 	height: 100%;
 	margin: auto;
 }
 
 header.pg-home {
+	flex: 1;
 	display: flex;
     justify-content: center;
-	font-size: 4em;
+	font-size: 5vw;
 	font-weight: bold;
 	text-align: center;
-	height: 30%;
+	height: 25%;
 }
 
 header.pg-home h2 {
@@ -87,29 +91,30 @@ header.pg-home h2 {
 }
 
 ul {
+	flex: 2;
 	box-sizing: inherit;
 	list-style-type: none;
-	width: 100%;
-	height: 40%;
+	height: 50%;
 	display: flex;
 	align-items: center;
-	font-size: 1.2em;
-	
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 li {
-	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 	box-sizing: border-box;
-	width: 25%;
-	height: 100%;
+	width: 50%;
+	height: 50%;
 	text-align: center;
+	font-size: 3vw;
 }
 
 li figure {
-	height: 70%;
-}
-
-li.addPerfil figure {
+	width: 100%;
+	height: 80%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -117,75 +122,59 @@ li.addPerfil figure {
 
 li figure img {
 	box-sizing: border-box;
-	max-width: 186px;
+	height: 80%;
+	min-width: 100px;
 	object-fit: contain;
 }
 
 footer.pg-home {
+	flex: 1;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: center;
 }
 
 button {
-	width: 200px;
+	width: 40%;
+	max-width: 200px;
 	height: 50px;
 	background-color: var(--main-color);
 	color: white;
 	border: 2px solid white;
-	font-size: 1em;
+	font-size: 3vw;
 	
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 769px) {
 
-	.topo {
-		justify-content: center;
+	.topo{
+		justify-content: flex-start;
 	}
-/* Usuarios */
-	
-	
-	div.pg-home section {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-	}
-	
+
 	header.pg-home {
-		flex: 1;
-		font-size: 1.8em;		
+		font-size: 50px;
 	}
-	
-	header.pg-home h2 {
+
+	ul {
+		flex-wrap: nowrap;
+		width: 90%;
+		max-width: 858px;
 		margin: auto;
 	}
 	
-	ul {
-		flex: 4;
-		max-width: 768px;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	
 	li {
-		flex-basis: 50%;
-		height: 60%;
+		width: 25%;
+		max-width: 186px;
+		font-size: 20px;
 	}
-	
-	li figure {
-		width: 100%;
-	}
-	
-	li figure img {
-		max-width: 150px;
-	} 
-	
-	footer.pg-home {
-		flex: 1;
+	button {
+		width: 200px;
+		height: 50px;
+		font-size: 20px;
 	}
 
+	#footPage {
+		font-size: 16px;
+	}
 }
-
 
