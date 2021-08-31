@@ -94,11 +94,13 @@ ul {
 	flex: 2;
 	box-sizing: inherit;
 	list-style-type: none;
+	max-width: 372px;
 	height: 50%;
 	display: flex;
-	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+	margin: auto;
 	padding: 0;
 }
 
@@ -108,6 +110,7 @@ li {
 	justify-content: space-between;
 	box-sizing: border-box;
 	width: 50%;
+	max-width: 186px;
 	height: 50%;
 	text-align: center;
 	font-size: 3vw;
@@ -169,7 +172,7 @@ button {
 	}
 
 	header.pg-home h2 {
-		font-size: 50px;
+		font-size: 36px;
 	}
 
 	ul {
@@ -177,11 +180,12 @@ button {
 		width: 90%;
 		max-width: 858px;
 		margin: auto;
+		padding: 0;
 	}
 	
 	li {
 		width: 25%;
-		max-width: 186px;
+		/* max-width: 186px; */
 		font-size: 12px;
 	}
 	button {
