@@ -128,7 +128,8 @@ li figure {
 li figure img {
 	box-sizing: border-box;
 	flex: 1;
-	height: 80%;
+	height: 100%;
+	max-width: 186px;
 	object-fit: contain;
 }
 
